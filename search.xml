@@ -1,29 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Test2</title>
-    <url>/2024/11/03/Test2/</url>
-    <content><![CDATA[<h3 id="1-This-is-a-blog-Test"><a href="#1-This-is-a-blog-Test" class="headerlink" title="1. This is a blog Test"></a>1. This is a blog Test</h3><ul>
-<li>First</li>
-<li>Second</li>
-</ul>
-<hr>
-<h3 id="2-Show-Text"><a href="#2-Show-Text" class="headerlink" title="2. Show Text"></a>2. Show Text</h3><ul>
-<li><strong>这是加粗</strong></li>
-</ul>
-<blockquote>
-<p><em>这是斜体</em></p>
-</blockquote>
-]]></content>
-      <tags>
-        <tag>test</tag>
-        <tag>tag1</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>第一篇文章</title>
     <url>/2024/11/06/2024-11-6%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
     <content><![CDATA[<h2 id="这是我的第一篇文章"><a href="#这是我的第一篇文章" class="headerlink" title="这是我的第一篇文章"></a>这是我的第一篇文章</h2>]]></content>
+      <categories>
+        <category>article</category>
+      </categories>
+      <tags>
+        <tag>first</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>four</title>
+    <url>/2024/11/09/four/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>four</category>
+      </categories>
+      <tags>
+        <tag>four</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>page</title>
+    <url>/2024/11/03/page/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>page</category>
+      </categories>
+      <tags>
+        <tag>page</tag>
+      </tags>
   </entry>
   <entry>
     <title>Hello World</title>
@@ -44,8 +52,33 @@
 ]]></content>
   </entry>
   <entry>
-    <title>page</title>
-    <url>/2024/11/03/page/</url>
+    <title>teo</title>
+    <url>/2024/11/09/teo/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>Test2</title>
+    <url>/2024/11/03/Test2/</url>
+    <content><![CDATA[<h3 id="1-This-is-a-blog-Test"><a href="#1-This-is-a-blog-Test" class="headerlink" title="1. This is a blog Test"></a>1. This is a blog Test</h3><ul>
+<li>First</li>
+<li>Second</li>
+</ul>
+<hr>
+<h3 id="2-Show-Text"><a href="#2-Show-Text" class="headerlink" title="2. Show Text"></a>2. Show Text</h3><ul>
+<li><strong>这是加粗</strong></li>
+</ul>
+<blockquote>
+<p><em>这是斜体</em></p>
+</blockquote>
+]]></content>
+      <tags>
+        <tag>test</tag>
+        <tag>tag1</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>threee</title>
+    <url>/2024/11/09/threee/</url>
     <content><![CDATA[]]></content>
   </entry>
 </search>
