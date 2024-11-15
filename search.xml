@@ -1,167 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title>mos管</title>
-      <link href="/2024/11/15/mos%E7%AE%A1%E7%94%B5%E5%B9%B3%E8%BD%AC%E6%8D%A2%E7%94%B5%E8%B7%AF/"/>
-      <url>/2024/11/15/mos%E7%AE%A1%E7%94%B5%E5%B9%B3%E8%BD%AC%E6%8D%A2%E7%94%B5%E8%B7%AF/</url>
-      
-        <content type="html"><![CDATA[<h1 id="mos管电平转换电路"><a href="#mos管电平转换电路" class="headerlink" title="mos管电平转换电路"></a>mos管电平转换电路</h1><h2 id="基本概述"><a href="#基本概述" class="headerlink" title="基本概述"></a>基本概述</h2><p>该电路通过Nmos管的开关驱动来实现的，对于Nmos管的简单理解就是他的GS电压大于截止电压就会导通，如果小于就会阻断。</p><p><img src="/2024/11/15/mos%E7%AE%A1%E7%94%B5%E5%B9%B3%E8%BD%AC%E6%8D%A2%E7%94%B5%E8%B7%AF/myblog\myblog\source_posts\mos管电平转换电路\1.png" alt="1"></p><h2 id="详细实现原理"><a href="#详细实现原理" class="headerlink" title="详细实现原理"></a>详细实现原理</h2><p><img src="/2024/11/15/mos%E7%AE%A1%E7%94%B5%E5%B9%B3%E8%BD%AC%E6%8D%A2%E7%94%B5%E8%B7%AF/myblog\myblog\source_posts\mos管电平转换电路\2.png" alt="2"></p><p>当左侧输入5V高电平，下面的寄生二极管不导通，所以右侧的电平会被上拉倒VCC1 3.3V，当左侧给到0低电平，下面的寄生二极管先导通，探针一位置电压为二极管的导通电压，后由于GS压降大，mos管导通S源极D漏极间电阻比较小，二极管被短路，这个时候探针一位置会联通GND，电压来到mos管导通和R2分压，一般几十mV左右。由此完成了5V通讯电平到3.3V通讯电平跳变。</p><p><img src="/2024/11/15/mos%E7%AE%A1%E7%94%B5%E5%B9%B3%E8%BD%AC%E6%8D%A2%E7%94%B5%E8%B7%AF/myblog\myblog\source_posts\mos管电平转换电路\3.png" alt="3"></p><p>当右侧输入3.3V，截止状态，左侧拉高至5V。右侧是GND，GS压差MOS管导通，探针一几十mV。</p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>使用了mos管的开关特性，使用时关键在于高电平输入状态，要保证二极管不导通，使得输出电压拉高。当低电平时使mos管导通拉低到GND。寄生二极管的左侧电压一定要比右侧高不然会一直导通。</p>]]></content>
-      
-      
+<search>
+  <entry>
+    <title>第一篇文章</title>
+    <url>/2024/11/06/2024-11-6%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<h2 id="这是我的第一篇文章"><a href="#这是我的第一篇文章" class="headerlink" title="这是我的第一篇文章"></a>这是我的第一篇文章</h2>]]></content>
       <categories>
-          
-          <category> 硬件 </category>
-          
+        <category>article</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> mos管 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>four</title>
-      <link href="/2024/11/09/four/"/>
-      <url>/2024/11/09/four/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
+      <tags>
+        <tag>first</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Test2</title>
+    <url>/2024/11/03/Test2/</url>
+    <content><![CDATA[<h3 id="1-This-is-a-blog-Test"><a href="#1-This-is-a-blog-Test" class="headerlink" title="1. This is a blog Test"></a>1. This is a blog Test</h3><ul>
+<li>First</li>
+<li>Second</li>
+</ul>
+<hr>
+<h3 id="2-Show-Text"><a href="#2-Show-Text" class="headerlink" title="2. Show Text"></a>2. Show Text</h3><ul>
+<li><strong>这是加粗</strong></li>
+</ul>
+<blockquote>
+<p><em>这是斜体</em></p>
+</blockquote>
+]]></content>
+      <tags>
+        <tag>test</tag>
+        <tag>tag1</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>four</title>
+    <url>/2024/11/09/four/</url>
+    <content><![CDATA[]]></content>
       <categories>
-          
-          <category> four </category>
-          
+        <category>four</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> four </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>threee</title>
-      <link href="/2024/11/09/threee/"/>
-      <url>/2024/11/09/threee/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>teo</title>
-      <link href="/2024/11/09/teo/"/>
-      <url>/2024/11/09/teo/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>第一篇文章</title>
-      <link href="/2024/11/06/2024-11-6%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
-      <url>/2024/11/06/2024-11-6%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
-      
-        <content type="html"><![CDATA[<h2 id="这是我的第一篇文章"><a href="#这是我的第一篇文章" class="headerlink" title="这是我的第一篇文章"></a>这是我的第一篇文章</h2>]]></content>
-      
-      
+      <tags>
+        <tag>four</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2024/11/03/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>page</title>
+    <url>/2024/11/03/page/</url>
+    <content><![CDATA[]]></content>
       <categories>
-          
-          <category> article </category>
-          
+        <category>page</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> first </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>page</title>
-      <link href="/2024/11/03/page/"/>
-      <url>/2024/11/03/page/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
+      <tags>
+        <tag>page</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>mos管</title>
+    <url>/2024/11/15/mos%E7%AE%A1%E7%94%B5%E5%B9%B3%E8%BD%AC%E6%8D%A2%E7%94%B5%E8%B7%AF/</url>
+    <content><![CDATA[<h1 id="mos管电平转换电路"><a href="#mos管电平转换电路" class="headerlink" title="mos管电平转换电路"></a>mos管电平转换电路</h1><h2 id="基本概述"><a href="#基本概述" class="headerlink" title="基本概述"></a>基本概述</h2><p>该电路通过Nmos管的开关驱动来实现的，对于Nmos管的简单理解就是他的GS电压大于截止电压就会导通，如果小于就会阻断。</p>
+<p><img src="/2024/11/15/mos%E7%AE%A1%E7%94%B5%E5%B9%B3%E8%BD%AC%E6%8D%A2%E7%94%B5%E8%B7%AF/myblog\myblog\source_posts\mos管电平转换电路\1.png" alt="1"></p>
+<h2 id="详细实现原理"><a href="#详细实现原理" class="headerlink" title="详细实现原理"></a>详细实现原理</h2><p><img src="/2024/11/15/mos%E7%AE%A1%E7%94%B5%E5%B9%B3%E8%BD%AC%E6%8D%A2%E7%94%B5%E8%B7%AF/myblog\myblog\source_posts\mos管电平转换电路\2.png" alt="2"></p>
+<p>当左侧输入5V高电平，下面的寄生二极管不导通，所以右侧的电平会被上拉倒VCC1 3.3V，当左侧给到0低电平，下面的寄生二极管先导通，探针一位置电压为二极管的导通电压，后由于GS压降大，mos管导通S源极D漏极间电阻比较小，二极管被短路，这个时候探针一位置会联通GND，电压来到mos管导通和R2分压，一般几十mV左右。由此完成了5V通讯电平到3.3V通讯电平跳变。</p>
+<p><img src="/2024/11/15/mos%E7%AE%A1%E7%94%B5%E5%B9%B3%E8%BD%AC%E6%8D%A2%E7%94%B5%E8%B7%AF/myblog\myblog\source_posts\mos管电平转换电路\3.png" alt="3"></p>
+<p>当右侧输入3.3V，截止状态，左侧拉高至5V。右侧是GND，GS压差MOS管导通，探针一几十mV。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>使用了mos管的开关特性，使用时关键在于高电平输入状态，要保证二极管不导通，使得输出电压拉高。当低电平时使mos管导通拉低到GND。寄生二极管的左侧电压一定要比右侧高不然会一直导通。</p>
+]]></content>
       <categories>
-          
-          <category> page </category>
-          
+        <category>硬件</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> page </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Test2</title>
-      <link href="/2024/11/03/Test2/"/>
-      <url>/2024/11/03/Test2/</url>
-      
-        <content type="html"><![CDATA[<h3 id="1-This-is-a-blog-Test"><a href="#1-This-is-a-blog-Test" class="headerlink" title="1. This is a blog Test"></a>1. This is a blog Test</h3><ul><li>First</li><li>Second</li></ul><hr><h3 id="2-Show-Text"><a href="#2-Show-Text" class="headerlink" title="2. Show Text"></a>2. Show Text</h3><ul><li><strong>这是加粗</strong></li></ul><blockquote><p><em>这是斜体</em></p></blockquote>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> test </tag>
-            
-            <tag> tag1 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/2024/11/03/hello-world/"/>
-      <url>/2024/11/03/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-  
-  
+      <tags>
+        <tag>mos管</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>threee</title>
+    <url>/2024/11/09/threee/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>teo</title>
+    <url>/2024/11/09/teo/</url>
+    <content><![CDATA[]]></content>
+  </entry>
 </search>
