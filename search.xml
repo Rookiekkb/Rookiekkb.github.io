@@ -1,167 +1,160 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title>mos管</title>
-      <link href="/2024/11/15/mos%E7%AE%A1%E7%94%B5%E5%B9%B3%E8%BD%AC%E6%8D%A2%E7%94%B5%E8%B7%AF/"/>
-      <url>/2024/11/15/mos%E7%AE%A1%E7%94%B5%E5%B9%B3%E8%BD%AC%E6%8D%A2%E7%94%B5%E8%B7%AF/</url>
-      
-        <content type="html"><![CDATA[<h1 id="mos管电平转换电路"><a href="#mos管电平转换电路" class="headerlink" title="mos管电平转换电路"></a>mos管电平转换电路</h1><h2 id="基本概述"><a href="#基本概述" class="headerlink" title="基本概述"></a>基本概述</h2><p>该电路通过Nmos管的开关驱动来实现的，对于Nmos管的简单理解就是他的GS电压大于截止电压就会导通，如果小于就会阻断。</p><p><img src="/2024/11/15/mos%E7%AE%A1%E7%94%B5%E5%B9%B3%E8%BD%AC%E6%8D%A2%E7%94%B5%E8%B7%AF/image-20241116003153761.png" alt="image-20241116003153761"></p><h2 id="详细实现原理"><a href="#详细实现原理" class="headerlink" title="详细实现原理"></a>详细实现原理</h2><p><img src="/2024/11/15/mos%E7%AE%A1%E7%94%B5%E5%B9%B3%E8%BD%AC%E6%8D%A2%E7%94%B5%E8%B7%AF/image-20241116003211033.png" alt="image-20241116003211033"></p><p>当左侧输入5V高电平，下面的寄生二极管不导通，所以右侧的电平会被上拉倒VCC1 3.3V，当左侧给到0低电平，下面的寄生二极管先导通，探针一位置电压为二极管的导通电压，后由于GS压降大，mos管导通S源极D漏极间电阻比较小，二极管被短路，这个时候探针一位置会联通GND，电压来到mos管导通和R2分压，一般几十mV左右。由此完成了5V通讯电平到3.3V通讯电平跳变。</p><p><img src="/2024/11/15/mos%E7%AE%A1%E7%94%B5%E5%B9%B3%E8%BD%AC%E6%8D%A2%E7%94%B5%E8%B7%AF/image-20241116003222199.png" alt="image-20241116003222199"></p><p>当右侧输入3.3V，截止状态，左侧拉高至5V。右侧是GND，GS压差MOS管导通，探针一几十mV。</p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>使用了mos管的开关特性，使用时关键在于高电平输入状态，要保证二极管不导通，使得输出电压拉高。当低电平时使mos管导通拉低到GND。寄生二极管的左侧电压一定要比右侧高不然会一直导通。</p>]]></content>
-      
-      
+<search>
+  <entry>
+    <title>Test2</title>
+    <url>/2024/11/03/Test2/</url>
+    <content><![CDATA[<h3 id="1-This-is-a-blog-Test"><a href="#1-This-is-a-blog-Test" class="headerlink" title="1. This is a blog Test"></a>1. This is a blog Test</h3><ul>
+<li>First</li>
+<li>Second</li>
+</ul>
+<hr>
+<h3 id="2-Show-Text"><a href="#2-Show-Text" class="headerlink" title="2. Show Text"></a>2. Show Text</h3><ul>
+<li><strong>这是加粗</strong></li>
+</ul>
+<blockquote>
+<p><em>这是斜体</em></p>
+</blockquote>
+]]></content>
+      <tags>
+        <tag>test</tag>
+        <tag>tag1</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>four</title>
+    <url>/2024/11/09/four/</url>
+    <content><![CDATA[]]></content>
       <categories>
-          
-          <category> 硬件 </category>
-          
+        <category>four</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> mos管 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>four</title>
-      <link href="/2024/11/09/four/"/>
-      <url>/2024/11/09/four/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
+      <tags>
+        <tag>four</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一篇文章</title>
+    <url>/2024/11/06/2024-11-6%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<h2 id="这是我的第一篇文章"><a href="#这是我的第一篇文章" class="headerlink" title="这是我的第一篇文章"></a>这是我的第一篇文章</h2>]]></content>
       <categories>
-          
-          <category> four </category>
-          
+        <category>article</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> four </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>threee</title>
-      <link href="/2024/11/09/threee/"/>
-      <url>/2024/11/09/threee/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>teo</title>
-      <link href="/2024/11/09/teo/"/>
-      <url>/2024/11/09/teo/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>第一篇文章</title>
-      <link href="/2024/11/06/2024-11-6%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
-      <url>/2024/11/06/2024-11-6%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
-      
-        <content type="html"><![CDATA[<h2 id="这是我的第一篇文章"><a href="#这是我的第一篇文章" class="headerlink" title="这是我的第一篇文章"></a>这是我的第一篇文章</h2>]]></content>
-      
-      
+      <tags>
+        <tag>first</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>page</title>
+    <url>/2024/11/03/page/</url>
+    <content><![CDATA[]]></content>
       <categories>
-          
-          <category> article </category>
-          
+        <category>page</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> first </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>page</title>
-      <link href="/2024/11/03/page/"/>
-      <url>/2024/11/03/page/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
+      <tags>
+        <tag>page</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>mos管</title>
+    <url>/2024/11/15/mos%E7%AE%A1%E7%94%B5%E5%B9%B3%E8%BD%AC%E6%8D%A2%E7%94%B5%E8%B7%AF/</url>
+    <content><![CDATA[<h1 id="mos管电平转换电路"><a href="#mos管电平转换电路" class="headerlink" title="mos管电平转换电路"></a>mos管电平转换电路</h1><h2 id="基本概述"><a href="#基本概述" class="headerlink" title="基本概述"></a>基本概述</h2><p>该电路通过Nmos管的开关驱动来实现的，对于Nmos管的简单理解就是他的GS电压大于截止电压就会导通，如果小于就会阻断。</p>
+<p><img src="/2024/11/15/mos%E7%AE%A1%E7%94%B5%E5%B9%B3%E8%BD%AC%E6%8D%A2%E7%94%B5%E8%B7%AF/image-20241116003153761.png" alt="image-20241116003153761"></p>
+<h2 id="详细实现原理"><a href="#详细实现原理" class="headerlink" title="详细实现原理"></a>详细实现原理</h2><p><img src="/2024/11/15/mos%E7%AE%A1%E7%94%B5%E5%B9%B3%E8%BD%AC%E6%8D%A2%E7%94%B5%E8%B7%AF/image-20241116003211033.png" alt="image-20241116003211033"></p>
+<p>当左侧输入5V高电平，下面的寄生二极管不导通，所以右侧的电平会被上拉倒VCC1 3.3V，当左侧给到0低电平，下面的寄生二极管先导通，探针一位置电压为二极管的导通电压，后由于GS压降大，mos管导通S源极D漏极间电阻比较小，二极管被短路，这个时候探针一位置会联通GND，电压来到mos管导通和R2分压，一般几十mV左右。由此完成了5V通讯电平到3.3V通讯电平跳变。</p>
+<p><img src="/2024/11/15/mos%E7%AE%A1%E7%94%B5%E5%B9%B3%E8%BD%AC%E6%8D%A2%E7%94%B5%E8%B7%AF/image-20241116003222199.png" alt="image-20241116003222199"></p>
+<p>当右侧输入3.3V，截止状态，左侧拉高至5V。右侧是GND，GS压差MOS管导通，探针一几十mV。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>使用了mos管的开关特性，使用时关键在于高电平输入状态，要保证二极管不导通，使得输出电压拉高。当低电平时使mos管导通拉低到GND。寄生二极管的左侧电压一定要比右侧高不然会一直导通。</p>
+]]></content>
       <categories>
-          
-          <category> page </category>
-          
+        <category>硬件</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> page </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Test2</title>
-      <link href="/2024/11/03/Test2/"/>
-      <url>/2024/11/03/Test2/</url>
-      
-        <content type="html"><![CDATA[<h3 id="1-This-is-a-blog-Test"><a href="#1-This-is-a-blog-Test" class="headerlink" title="1. This is a blog Test"></a>1. This is a blog Test</h3><ul><li>First</li><li>Second</li></ul><hr><h3 id="2-Show-Text"><a href="#2-Show-Text" class="headerlink" title="2. Show Text"></a>2. Show Text</h3><ul><li><strong>这是加粗</strong></li></ul><blockquote><p><em>这是斜体</em></p></blockquote>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> test </tag>
-            
-            <tag> tag1 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/2024/11/03/hello-world/"/>
-      <url>/2024/11/03/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-  
-  
+      <tags>
+        <tag>mos管</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2024/11/03/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>threee</title>
+    <url>/2024/11/09/threee/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>teo</title>
+    <url>/2024/11/09/teo/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>加法器</title>
+    <url>/2024/11/25/%E5%8A%A0%E6%B3%95%E5%99%A8/</url>
+    <content><![CDATA[<h1 id="a-b-a’b-ab’-a0b-同或符号-ab-a’b’"><a href="#a-b-a’b-ab’-a0b-同或符号-ab-a’b’" class="headerlink" title="a^b &#x3D; a’b+ab’   a0b(同或符号) &#x3D; ab + a’b’"></a>a^b &#x3D; a’b+ab’   a0b(同或符号) &#x3D; ab + a’b’</h1><h1 id="半加器"><a href="#半加器" class="headerlink" title="半加器"></a>半加器</h1><p>半加器就是计算两个单比特的二进制数a b的和，输出结果为sum 和 carry ，计算结果就是 2c + s。 </p>
+<h2 id="真值表"><a href="#真值表" class="headerlink" title="真值表"></a>真值表</h2><p><img src="/2024/11/25/%E5%8A%A0%E6%B3%95%E5%99%A8/image-20241125230202188.png" alt="image-20241125230202188"></p>
+<h2 id="逻辑表达"><a href="#逻辑表达" class="headerlink" title="逻辑表达"></a>逻辑表达</h2><p>s &#x3D; a’b + ab’ 				c &#x3D; ab</p>
+<h2 id="verilog描述"><a href="#verilog描述" class="headerlink" title="verilog描述"></a>verilog描述</h2><p><img src="/2024/11/25/%E5%8A%A0%E6%B3%95%E5%99%A8/image-20241125230520380.png" alt="image-20241125230520380"></p>
+<h2 id="电路图"><a href="#电路图" class="headerlink" title="电路图"></a>电路图</h2><p><img src="/2024/11/25/%E5%8A%A0%E6%B3%95%E5%99%A8/image-20241125234439912.png" alt="image-20241125234439912"></p>
+<h1 id="全加器"><a href="#全加器" class="headerlink" title="全加器"></a>全加器</h1><p>全加器相比较半加器多了一个信号cin，其中s为三个输入信号的和，cout为三个输入信号超2后的进位。</p>
+<h2 id="真值表-1"><a href="#真值表-1" class="headerlink" title="真值表"></a>真值表</h2><p><img src="/2024/11/25/%E5%8A%A0%E6%B3%95%E5%99%A8/image-20241125234840557.png" alt="image-20241125234840557"></p>
+<h2 id="逻辑表达-1"><a href="#逻辑表达-1" class="headerlink" title="逻辑表达"></a>逻辑表达</h2><p>s &#x3D; a’bc’+ab’c’+ca’b’+abc &#x3D; c’a^b + ca0b &#x3D; c^a^b</p>
+<p>cout &#x3D; abc’ + bca’ + acb’ + abc &#x3D; ab + c(a^b)</p>
+<h2 id="verilog描述-1"><a href="#verilog描述-1" class="headerlink" title="verilog描述"></a>verilog描述</h2><p><img src="/2024/11/25/%E5%8A%A0%E6%B3%95%E5%99%A8/image-20241126001211398.png" alt="image-20241126001211398"></p>
+<h2 id="电路图-1"><a href="#电路图-1" class="headerlink" title="电路图"></a>电路图</h2><p>当我使用modelsim仿真时出现了多使用了一组异或资源，可见verilog要详细起来</p>
+<p><img src="/2024/11/25/%E5%8A%A0%E6%B3%95%E5%99%A8/image-20241126002112265.png" alt="image-20241126002112265"></p>
+<p><img src="/2024/11/25/%E5%8A%A0%E6%B3%95%E5%99%A8/image-20241126002121295.png" alt="image-20241126002121295"></p>
+<h1 id="行波进位加法器（RCA）"><a href="#行波进位加法器（RCA）" class="headerlink" title="行波进位加法器（RCA）"></a>行波进位加法器（RCA）</h1><p>N-bit加法器可以由多个1bit的全加器来构成，单bit的全加器的输出进位符号给到下一个的输入进位cin中，这种加法器就是RCA，AB是16bit的加数，S为A B的和，c16为该加法器的输出。</p>
+<p><img src="/2024/11/25/%E5%8A%A0%E6%B3%95%E5%99%A8/image-20241130154007760.png" alt="image-20241130154007760"></p>
+<p>很明显的确定他的进位链太长了，对加法器的性能有很大的影响。</p>
+<h2 id="verilog描述-2"><a href="#verilog描述-2" class="headerlink" title="verilog描述"></a>verilog描述</h2><p><img src="/2024/11/25/%E5%8A%A0%E6%B3%95%E5%99%A8/image-20241130171500125.png" alt="image-20241130171500125"></p>
+<h2 id="关键路径分析"><a href="#关键路径分析" class="headerlink" title="关键路径分析"></a>关键路径分析</h2><p><img src="/2024/11/25/%E5%8A%A0%E6%B3%95%E5%99%A8/image-20241130171816045.png" alt="image-20241130171816045"></p>
+<p>a到s 两个门电路 		到cout 3</p>
+<p>b到s 两个门电路		 到cout 3 </p>
+<p>c到s 一个门电路		 到cout 2  </p>
+<p><img src="/2024/11/25/%E5%8A%A0%E6%B3%95%E5%99%A8/image-20241130172311607.png" alt="image-20241130172311607"></p>
+<p>由图可知第一个需要三个门电路延时，后参与到第二个门电路输入经过两个门延时继续下一个电路。所以4bitRCA需要3+（4-1）*2 &#x3D; 9个</p>
+<p>N bit为2n+1个门延时。</p>
+<h1 id="超前进位加法器（LCA）"><a href="#超前进位加法器（LCA）" class="headerlink" title="超前进位加法器（LCA）"></a>超前进位加法器（LCA）</h1><p>对于更宽的加法器，很明显RCA的门延时会更高，当我们面对高速信号处理时，他的性能就会拙形见肘，很明显关键路径的一大困难就是你的最后输出要收到上一级Cout的影响，我们可不可以通过并行计算来搞定他呢。</p>
+<p>全加器的逻辑表达为</p>
+<p>s &#x3D; a’bc’+ab’c’+ca’b’+abc &#x3D; c’a^b + ca0b &#x3D; c^a^b</p>
+<p>cout &#x3D; abc’ + bca’ + acb’ + abc &#x3D; ab + c(a^b)</p>
+<p>我们<font color="orange">定义P为a^b G为ab</font></p>
+<p>那么阶RCA的输出计算为</p>
+<p>C1 &#x3D; G0 + C0P0 </p>
+<p>C2 &#x3D; G1 + C1(P1) &#x3D; G1 + （G0+C0P0）P1 &#x3D; G1+G0P1+C0P0P1</p>
+<p>可推 C3 &#x3D; G2 + G1P2+G0P2P1+C0P2P1P0  <font color="magenta"><em><strong>C4 &#x3D; G3+G2P3+G1P3P2+G0P3P2P1+C0P3P2P1P0</strong></em></font></p>
+<p>S0 &#x3D; P0 ^ C0	S1 &#x3D; P1 ^ C1	S2 &#x3D; P2 ^ C2	S3 &#x3D; P3 ^ C3</p>
+<h2 id="结构图"><a href="#结构图" class="headerlink" title="结构图"></a>结构图</h2><p><img src="/2024/11/25/%E5%8A%A0%E6%B3%95%E5%99%A8/image-20241130194821008.png" alt="image-20241130194821008"></p>
+<p>对于更大带宽的LCA的话，他会对电路产生极大的扇入和扇出，所以也可以通过4bit的LCA级联完成。</p>
+<p><img src="/2024/11/25/%E5%8A%A0%E6%B3%95%E5%99%A8/image-20241130195018059.png" alt="image-20241130195018059"></p>
+<h2 id="关键路径分析-1"><a href="#关键路径分析-1" class="headerlink" title="关键路径分析"></a>关键路径分析</h2><p><img src="/2024/11/25/%E5%8A%A0%E6%B3%95%E5%99%A8/image-20241130195422141.png" alt="image-20241130195422141"></p>
+<p>很神奇我们的门电路延时关键路径变成的4个。如果是32位的呢，RCA需要65个，我们的LCA理想情况需要4个就可以完成，实际上我们要考虑实际电路的输入输出。如果我们采用8个4bit级联方式需要3+2*7+1 &#x3D; 18个门电路。相比较也提高了很多。</p>
+<h2 id="verilog描述-3"><a href="#verilog描述-3" class="headerlink" title="verilog描述"></a>verilog描述</h2><p><img src="/2024/11/25/%E5%8A%A0%E6%B3%95%E5%99%A8/image-20241130212654016.png" alt="image-20241130212654016"></p>
+<h1 id="进位旁路加法器（CSA）"><a href="#进位旁路加法器（CSA）" class="headerlink" title="进位旁路加法器（CSA）"></a>进位旁路加法器（CSA）</h1><h2 id="结构图-1"><a href="#结构图-1" class="headerlink" title="结构图"></a>结构图</h2><p><img src="/2024/11/25/%E5%8A%A0%E6%B3%95%E5%99%A8/image-20241130221641618.png" alt="image-20241130221641618"></p>
+<p>紫色部分是数据选择器当判断P3&amp;P2&amp;P1&amp;P0 &#x3D; 1时那C4 &#x3D; C0；为什么呢，首先我们来看<font color="magenta"><em><strong>C4 &#x3D; G3+G2P3+G1P3P2+G0P3P2P1+C0P3P2P1P0</strong></em></font>当判断判断P3&amp;P2&amp;P1&amp;P0 &#x3D; 1时可以得出P0-3全为1那么C4 &#x3D; G3+G2+G1+G0+C0</p>
+<p>我们的P为1代表a^b &#x3D; 1那么我们的G（a&amp;b）一定为0所以C4 &#x3D; C0。</p>
+<h2 id="关键路径分析-2"><a href="#关键路径分析-2" class="headerlink" title="关键路径分析"></a>关键路径分析</h2><p><img src="/2024/11/25/%E5%8A%A0%E6%B3%95%E5%99%A8/image-20241130222318886.png" alt="image-20241130222318886"></p>
+<p>其中Block为四个全加器，以及进位逻辑Skip还有二选一数据选择器，其中我对于该加法器的理解是在计算一些情况下如0111_1111_1111_1111+0000_0000_0000_0001的情况下，中间两级会被旁路。</p>
+<p><img src="/2024/11/25/%E5%8A%A0%E6%B3%95%E5%99%A8/image-20241130230955460.png" alt="image-20241130230955460"></p>
+<p>其中他的优势在于较大规模的加法器其中有多位不会进位那么就可以直接进位，显著提高性能。</p>
+<h2 id="verilog描述-4"><a href="#verilog描述-4" class="headerlink" title="verilog描述"></a>verilog描述</h2>]]></content>
+      <categories>
+        <category>FPGA</category>
+      </categories>
+      <tags>
+        <tag>底层逻辑实现</tag>
+      </tags>
+  </entry>
 </search>
